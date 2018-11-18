@@ -6,7 +6,7 @@ export default class Nav extends React.Component {
     return (
       <div id="nav">
         <div id="nav-logo" />
-        <div id="nav-profile-pic" />
+        {/* <div id="nav-profile-pic" /> */}
       </div>
     );
   }

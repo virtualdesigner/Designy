@@ -1,5 +1,5 @@
 #head-section {
-  height: calc(100vh - 91px);
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -7,7 +7,6 @@
 }
 
 #head-section__main-content {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,15 +35,41 @@
     "Lucida Sans", Arial, sans-serif;
   color: #1caf4b;
   animation: visibleAfterSec 1s forwards 1.2s;
+  margin-bottom: 3.3rem;
   /* transition: opacity 0.2s ease-in; */
 }
 
-#head-section__my-work {
+#head-section__my-work-wrapper {
+  text-shadow: 1rem;
   color: white;
-  font-size: 1.8rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.8rem;
+  animation: visibleAfterSec 1s forwards 2.2s;
+  opacity: 0;
 }
+
+#head-section__my-work {
+}
+
+/* #typewriter-cursor {
+  opacity: 0;
+  height: 1.8rem;
+  width: 2px;
+  background-color: white !important;
+  animation: skillsAnimation 1s ease-out 3.3s infinite;
+  transform: translateY(8px);
+  margin-left: 2px;
+}
+
+@keyframes skillsAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
 
 @keyframes increaseSize {
   0% {

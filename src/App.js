@@ -8,7 +8,15 @@ export default class App extends React.Component {
     return (
       <div>
         <Nav />
-        <Head />
+        <Head
+          skills={[
+            "web development",
+            "web design",
+            "ai reasearch",
+            "machine learning",
+            "investing"
+          ]}
+        />
       </div>
     );
   }
