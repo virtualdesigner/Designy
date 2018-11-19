@@ -5,23 +5,9 @@ import TypeWriterText from "./TypeWriterText";
 export default class Head extends React.Component {
   constructor() {
     super();
-    this.state = {
-      skill: "web developer"
-    };
-
-    this.changeSkill = this.changeSkill.bind(this);
   }
 
-  changeSkill() {
-    const that = this;
-    setInterval(() => {
-      that.setState((prevState, prevProps) => {});
-    }, 3000);
-  }
-
-  componentDidMount() {
-    // this.changeSkill();
-  }
+  componentDidMount() {}
 
   render() {
     let skill = "web developer";
@@ -40,7 +26,7 @@ export default class Head extends React.Component {
     }, 3000);
 
     return (
-      <div>
+      <div id={this.props.goUp}>
         <div id="head-section">
           <div id="head-section__main-content">
             <p id="head-section__main-text">LOVE TO DREAM</p>

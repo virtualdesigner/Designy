@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/TypeWriterText.css";
 
 export default class TypeWriterText extends React.Component {
   constructor(props) {

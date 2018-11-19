@@ -1,9 +1,14 @@
+#home {
+  animation: goUp 2s ease-out 0s forwards;
+}
+
 #head-section {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #000;
 }
 
 #head-section__main-content {
@@ -50,6 +55,22 @@
 }
 
 #head-section__my-work {
+}
+
+@keyframes goUp {
+  to {
+    margin-top: -100vh;
+  }
+}
+
+@keyframes hideHeight {
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    height: 0px;
+  }
 }
 
 /* #typewriter-cursor {

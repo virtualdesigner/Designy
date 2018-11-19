@@ -1,5 +1,6 @@
 #nav {
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 90px;
   margin: 0;
@@ -8,6 +9,7 @@
   border-bottom: 1px solid #202124;
   display: flex;
   flex-direction: row;
+  z-index: 3;
 }
 
 #nav-logo {

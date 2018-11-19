@@ -2,6 +2,19 @@ html,
 body {
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #000;
-  overflow-x: hidden !important;
+  overflow: hidden;
 }
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* 
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); 
+
+::-moz-any(#contentWrapper) browser {
+  margin-right: -14px !important;
+  overflow-y: scroll;
+  margin-bottom: -14px !important;
+  overflow-x: scroll;
+} */
