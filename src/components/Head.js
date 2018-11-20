@@ -10,23 +10,17 @@ export default class Head extends React.Component {
   componentDidMount() {}
 
   render() {
-    let skill = "web developer";
-
-    setInterval(() => {
-      if (
-        this.props.skills.length - 1 ===
-        this.props.skills.indexOf(this.skill)
-      ) {
-        this.skill = this.props.skills[0];
-      } else {
-        this.skill = this.props.skills[
-          this.props.skills.indexOf(this.skill) + 1
-        ];
-      }
-    }, 3000);
-
     return (
-      <div id={this.props.goUp}>
+      <div
+        id={this.props.upOrDown}
+        className="head"
+        style={{
+          transitionProperty: "margin",
+          transitionDuration: "1s",
+          transitionTimingFunction: "ease",
+          marginTop: this.props.currentDiv > 1 ? "-100vh" : "0vh"
+        }}
+      >
         <div id="head-section">
           <div id="head-section__main-content">
             <p id="head-section__main-text">LOVE TO DREAM</p>

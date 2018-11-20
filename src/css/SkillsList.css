@@ -1,6 +1,10 @@
-#skillsList {
-  animation: goUp 2s ease-out 0s forwards;
+/* #skillsList-up {
+  animation: goUp 1s ease-out 0s forwards;
 }
+
+#skillsList-down {
+  animation: goDown 1s ease-out 0s forwards;
+} */
 
 #about-my-skills {
   height: 100vh;
@@ -8,8 +12,14 @@
   background-color: #202124;
 }
 
-@keyframes goUp {
+/* @keyframes goUp {
   to {
     margin-top: -100vh;
   }
 }
+
+@keyframes goDown {
+  to {
+    margin-top: 0vh;
+  }
+} */

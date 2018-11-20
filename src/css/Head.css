@@ -1,6 +1,16 @@
-#home {
-  animation: goUp 2s ease-out 0s forwards;
+.head {
+  transition: all 2s ease;
 }
+
+/* #home-up {
+  animation: goUp 1s ease-out 0s forwards;
+}
+
+#home-down {
+  transition: all 2s ease;
+
+  animation: goDown 1s ease-out 0s forwards;
+} */
 
 #head-section {
   height: 100vh;
@@ -57,11 +67,21 @@
 #head-section__my-work {
 }
 
+/* 
 @keyframes goUp {
+  from {
+    margin-top: 0vh;
+  }
   to {
-    margin-top: -100vh;
+    margin-top: 50vh;
   }
 }
+
+@keyframes goDown {
+  to {
+    margin-top: 0vh;
+  }
+} */
 
 @keyframes hideHeight {
   75% {

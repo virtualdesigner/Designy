@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Sidebar from "./components/Sidebar";
 import Head from "./components/Head";
 import SkillsList from "./components/SkillsList";
+import AboutMe from "./components/AboutMe";
 import "./css/App.css";
 
 export default class App extends React.Component {
@@ -35,9 +36,10 @@ export default class App extends React.Component {
             "machine learning",
             "investing"
           ]}
-          goUp={this.state.div > 1 ? "home" : "null"}
+          currentDiv={this.state.div}
         />
-        <SkillsList goUp={this.state.div > 2 ? "skillsList" : "null"} />
+        <SkillsList currentDiv={this.state.div} />
+        <AboutMe currentDiv={this.state.div} />
       </div>
     );
   }
