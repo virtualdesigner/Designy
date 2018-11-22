@@ -12,6 +12,10 @@
   width: 100vw;
   background-color: #202124;
   padding-top: 120px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #skills-list__heading {
@@ -37,4 +41,122 @@
   margin-top: 2.5rem;
   padding: 0;
   color: #fff;
+}
+
+#skills-list__skills {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 100vw;
+  margin-top: 5rem;
+}
+
+#skills-list__listing {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+#skills-list__html5 {
+  height: 5rem;
+  width: 5rem;
+  color: white;
+  background-image: url("../svg/html51.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transform: translate(0, -10px);
+}
+
+#skills-list__css3 {
+  height: 4.2rem;
+  width: 5rem;
+  color: white;
+  background-image: url("../svg/css3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transform: translate(0, -10px);
+}
+
+#skills-list__sass {
+  height: 5rem;
+  width: 5rem;
+  color: white;
+  background-image: url("../svg/sass.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transform: translate(0, -10px);
+}
+
+#skills-list__js {
+  height: 5rem;
+  width: 5rem;
+  color: white;
+  background-image: url("../svg/javascript.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transform: translate(0, -10px);
+}
+
+#skills-list__react {
+  height: 5rem;
+  width: 5rem;
+  color: white;
+  background-image: url("../svg/react.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transform: translate(0, -10px);
+}
+
+#skills-list__nodejs {
+  height: 5rem;
+  width: 5rem;
+  color: white;
+  background-image: url("../svg/nodejs.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transform: translate(0, -10px);
+}
+
+.skill-anim {
+  animation: skills-anim 0.2s ease-in-out 3s forwards;
+}
+
+#skills-list__quote-mark {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 30px;
+  width: 30px;
+}
+
+#skills-list__quote {
+  background-color: #3d3c3c;
+  width: 80vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@keyframes skills-anim {
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
